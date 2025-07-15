@@ -434,39 +434,3 @@ If you encounter issues not covered here, please:
 1. Check the logs in the terminal running the backend and frontend
 2. Review the API documentation at http://localhost:8000/docs
 3. Submit an issue with detailed reproduction steps and error messages
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-Built with ❤️ by the Legal AI Team
-│   ├── api/               # FastAPI endpoints
-│   │   ├── endpoints/     # API route handlers
-│   │   └── router.py      # Main API router
-│   ├── database/          # Database models and connection
-│   │   ├── connection.py  # Database connection setup
-│   │   └── models.py      # SQLAlchemy models
-│   └── main.py            # FastAPI application entry point
-├── tests/                 # Test scripts
-│   └── test_end_to_end.py # End-to-end test
-├── .env                   # Environment variables
-├── requirements.txt       # Python dependencies
-├── run.py                 # Application launcher script
-└── README.md              # Project documentation
-```
-
-## License
-
-[MIT](LICENSE)
