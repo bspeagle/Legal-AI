@@ -1,0 +1,177 @@
+/* 
+   Legal AI Virtual Courtroom
+   Custom CSS styling for Streamlit frontend
+*/
+
+/* General styling overrides */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Legal themed accent colors */
+.legal-primary {
+    color: #14213d;
+}
+
+.legal-accent {
+    color: #e63946;
+}
+
+.legal-success {
+    color: #2a9d8f;
+}
+
+.legal-warning {
+    color: #e9c46a;
+}
+
+/* Chat message styling */
+.chat-message-user {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #14213d;
+}
+
+.chat-message-agent {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #e63946;
+}
+
+.chat-message-judge {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 4px solid #2a9d8f;
+    font-weight: 500;
+}
+
+/* Card styling */
+.legal-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/* Button styling */
+.stButton>button {
+    background-color: #14213d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #233a66;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Document styling */
+.document-card {
+    border-left: 4px solid #14213d;
+    padding-left: 10px;
+    background-color: #f8f9fa;
+}
+
+/* Prediction result styling */
+.prediction-high {
+    color: #2a9d8f;
+    font-weight: bold;
+}
+
+.prediction-medium {
+    color: #e9c46a;
+    font-weight: bold;
+}
+
+.prediction-low {
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* Override some Streamlit default styles */
+.stTextInput>div>div>input {
+    border-radius: 4px;
+}
+
+.stTextArea>div>div>textarea {
+    border-radius: 4px;
+}
+
+.stSelectbox>div>div>div {
+    border-radius: 4px;
+}
+
+/* Sidebar styling */
+.sidebar .sidebar-content {
+    background-color: #f8f9fa;
+}
+
+/* Custom widget styles */
+.metric-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #14213d;
+}
+
+.metric-label {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    width: 2px;
+    height: 100%;
+    background: #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #14213d;
+}
